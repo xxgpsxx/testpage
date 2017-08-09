@@ -1,1 +1,1 @@
-web: flask deploy:app
+web: flask deploy:app.py
