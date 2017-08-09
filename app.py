@@ -16,5 +16,3 @@ def get_news():
     <p>{2}</p> <br/>
     </html>""".format(first_article.get("title"), first_article.get("published"), first_article.get("summary"))
 
-if __name__ == '__main__':
-    app.run(port = 6000, debug = True)
