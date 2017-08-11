@@ -1,2 +1,10 @@
 Flask==0.12.2 
 feedparser==5.2.1
+gunicorn==19.7.1
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+pip==9.0.1
+setuptools==36.2.7
+Werkzeug==0.12.2
+wheel==0.29.0
