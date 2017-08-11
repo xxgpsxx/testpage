@@ -16,3 +16,5 @@ def get_news():
     <p>{2}</p> <br/>
     </html>""".format(first_article.get("title"), first_article.get("published"), first_article.get("summary"))
 
+app.run(port = 5000, debug = true)
+
