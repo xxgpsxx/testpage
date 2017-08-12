@@ -9,6 +9,13 @@ def get_news():
     feed = feedparser.parse(BBC_FEED)
     first_article = feed['entries'][0]
     return """<html>
+    <head>
+    <style>
+    * {
+    color: red;
+    }
+    </style>
+    </head>
     <body>
     <h1>BBC Headlines</h1>
     <b>{0}</b><br/>
