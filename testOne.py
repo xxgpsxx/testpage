@@ -12,9 +12,9 @@ BBC_FEED = "http://feeds.bbci.co.uk/news/rss.xml"
 
 @app.route("/")
 def index():
+    """
     url = urlparse(os.environ["DATABASE_URL"])
     connStr = "host = {} port = {} dbname = {} user = {} password = {}".format(url.hostname, url.port, url.path[1:], url.username, url.password)
-    """
     #conn = psycopg2.connect("dbname=TestDb password=evdt1234 user=postgres")
     conn = psycopg2.connect(connStr)
 
