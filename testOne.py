@@ -37,7 +37,5 @@ def index():
     return "George Sheng 12232016"
 
 
-app.run()
-
 
 
