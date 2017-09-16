@@ -33,7 +33,7 @@ def index():
     x = 0
     output = ""
     for i in range(len(data)):
-        output = output + data[x][0] + " " + data[x][1]
+        output = output + str(data[x][0]) + " " + str(data[x][1])
         x = x + 1
     return output
 
