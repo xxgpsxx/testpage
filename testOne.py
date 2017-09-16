@@ -35,7 +35,7 @@ def index():
     for i in range(len(data)):
         output = output + str(data[x][0]) + " " + str(data[x][1])
         x = x + 1
-    return data
+    return '{}'.format(data)
 
 
 
