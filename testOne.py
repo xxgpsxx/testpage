@@ -22,16 +22,19 @@ def index():
 
     cur.execute("CREATE TABLE IF NOT EXISTS table1 (name TEXT, number REAL);")
 
-    name = "gsheng0"
-    number = 12232016
+    name = "George Sheng"
+    number = 2182017
 
     cur.execute("INSERT INTO table1  (name, number) VALUES ('{}', {})".format(name, number))
     cur.execute("SELECT * FROM table1")
 
     data = cur.fetchall()
     conn.close()
-
-    output = "{} {}".format(data[0][0], data[0][1])
+    x = 0
+    output = ""
+    for i in range(data.length()):
+        output = output + data[x][0] + " " + data[x][1]
+        x = x + 1
     return output
 
 
