@@ -22,8 +22,8 @@ def index():
 
     cur.execute("CREATE TABLE IF NOT EXISTS table1 (name TEXT, number REAL);")
 
-    name = "George Sheng"
-    number = 2182017
+    name = "gsheng0"
+    number = 12232016
 
     cur.execute("INSERT INTO table1  (name, number) VALUES ('{}', {})".format(name, number))
     cur.execute("SELECT * FROM table1")
