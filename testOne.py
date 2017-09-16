@@ -25,7 +25,8 @@ def index():
     name = "gsheng0"
     number = 12232016
 
-    cur.execute("INSERT INTO table1  (name, number) VALUES ('{}', {})".format(name, number))
+    for i in range(4):
+        cur.execute("INSERT INTO table1  (name, number) VALUES ('{}', {})".format(name, number))
     cur.execute("SELECT * FROM table1")
 
     data = cur.fetchall()
