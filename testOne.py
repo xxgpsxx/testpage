@@ -3,6 +3,7 @@ from flask import Flask
 from urllib.parse import urlparse
 import feedparser
 import os
+import psycopg2
 
 app = Flask(__name__)
 
